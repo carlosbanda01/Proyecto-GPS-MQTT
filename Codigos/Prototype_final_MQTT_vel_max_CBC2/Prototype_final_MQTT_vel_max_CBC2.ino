@@ -75,20 +75,23 @@ HardwareSerial sim800(1);  // Usamos UART1 del ESP32 (RX16,TX17)
   const char* USER = "movistar@datos";// "" para entel y claro
   const char* PWD = "movistar";// "" para entel y claro
 
-// Configuración del broker MQTT
-  const char* mqtt_server = "nanomq.culqui.io";  //mqtts://qd6acf83.ala.us-east-1.emqxsl.com
-  const int mqtt_port = 1883;                     //8883
-  const char* mqtt_user = "montacargas";                //montacargas, esp32_test
-  const char* mqtt_password = "Hp7f#gWsGeXTzP1s";  //Qid8kULggQvJAr:m, esp32_test, Hp7f#gWsGeXTzP1s
-  const char* client_id = "CBC_2";  // Client ID  (pero es montacargas 3)
-  const char* topic1 = "cbc/gps/datareceived/CBC_2";   //Topico donde se enviarán los datos
-  const char* topic2 = "cbc/gps/datasend";       //topico donde se enviaran vel_max
-  const char* topic3 = "cbc/gps/historyconsult"; //topico donde se enviara la consulta de datos historicos
-  const char* topic4 = "cbc/gps/historydata/CBC_2";    //topico donde se recibiran datos historicos
-  const char* topic5 = "cbc/gps/deleteSD";       //topico donde se enviara un comando para borrar la SD
-  const char* topic6 = "cbc/gps/stateESP32/CBC_2";     //topico para mandar mensajes del estado del ESP32
-  const char* topiclwt = "cbc/gps/off/CBC_2";   //topico para last will
-  const char* lwt = "CBC_2 off";       //Mensaje last will
+// Configuración del broker MQTT (PLANTILLA - REEMPLAZAR CON DATOS REALES)
+const char* mqtt_server   = "mqtt.example.com";   // Dirección del broker
+const int   mqtt_port     = 1883;                 // Puerto (ej. 1883 sin TLS, 8883 con TLS)
+const char* mqtt_user     = "usuario";            // Usuario de autenticación
+const char* mqtt_password = "clave123";           // Contraseña de autenticación
+const char* client_id     = "device_01";          // ID único para el cliente
+
+// Tópicos MQTT
+const char* topic1   = "planta/gps/datareceived/device_01"; // Datos en tiempo real
+const char* topic2   = "planta/gps/datasend";               // Configuración (ej. vel_max)
+const char* topic3   = "planta/gps/historyconsult";         // Consultas de históricos
+const char* topic4   = "planta/gps/historydata/device_01";  // Respuesta de históricos
+const char* topic5   = "planta/gps/deleteSD";               // Borrar SD
+const char* topic6   = "planta/gps/stateESP32/device_01";   // Estado del dispositivo
+const char* topiclwt = "planta/gps/off/device_01";          // Last Will Topic
+const char* lwt      = "device_01 off";                     // Last Will Message
+
 //Creamos la tarea Task2
   TaskHandle_t Task2;
 
