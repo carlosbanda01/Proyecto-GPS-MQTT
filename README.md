@@ -4,6 +4,6 @@ Se desarrolló una solución de monitoreo GPS en tiempo real basada en una PCB p
 
 ---
 
-### 🖼️ Vista del diseño de la PCB
+### 🖼️ Placa de PCB diseñada
 
 ![Diseño PCB Nueva Generación](https://github.com/carlosbanda01/Proyecto-GPS-MQTT/blob/main/Dise%C3%B1os/Dise%C3%B1o_PCB/DISE%C3%91O%20PCB%202.0/Nueva%20generacion/PCB_components_nueva_gen.png)
