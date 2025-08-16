@@ -1,0 +1,20 @@
+Listado de librerías y autores conocidos:
+
+ArduinoJson - Benoît Blanchon
+BasicTag - Autor no especificado / desconocido
+BigFont01_I2C - Autor no especificado / desconocido
+EmbededSparkplugNode - Autor no especificado / desconocido
+LiquidCrystal_I2C - Frank de Brabander (implementación más usada)
+NeoGPS - SlashDevin
+PubSubClient - Nick O'Leary
+Servo - Arduino Team
+Sqlite3_for_ESP8266 - Jens-Christian Skibakk / comunidad ESP8266
+Sqlite3Esp32 - Jens-Christian Skibakk / comunidad ESP32
+Time - Michael Margolis
+TinyGPS - Mikal Hart
+TinyGPSPlus - Mikal Hart
+TinyGPSPlus-ESP32 - Basado en Mikal Hart / adaptado comunidad ESP32
+TinyGPSPlusPub - Autor no especificado / desconocido
+TinyGSM - Volodymyr Shymanskyy
+ArduinoJson.zip - Benoît Blanchon
+BigFont01_I2C-1.0.4.zip - Autor no especificado / desconocido
